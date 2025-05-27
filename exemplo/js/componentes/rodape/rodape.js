@@ -1,6 +1,6 @@
 import { carregar } from "../carregar.js";
 
-export function componenteRodape() {
+export async function componenteRodape() {
   const rodape = document.querySelector('#rodape');
-  carregar('./js/componentes/rodape/rodape.html', rodape);
+  await carregar('./js/componentes/rodape/rodape.html', rodape);
 }

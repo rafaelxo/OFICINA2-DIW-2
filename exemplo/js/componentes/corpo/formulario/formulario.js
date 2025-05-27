@@ -4,16 +4,16 @@ import { componenteNascimento } from "./nascimento/nascimento.js";
 import { componenteEmail } from "./email/email.js";
 import { componenteBotao } from "./botao/botao.js";
 
-function carregarCampos() {
-    componenteNome();
-    componenteNascimento();
-    componenteEmail();
-    componenteBotao();
+async function carregarCampos() {
+    await componenteNome();
+    await componenteNascimento();
+    await componenteEmail();
+    await componenteBotao();
 }
 
-export function componenteFormulario() {
+export async function componenteFormulario() {
     const container = document.querySelector('#container');
-    carregar('./js/componentes/corpo/formulario/formulario.html', container);
+    await carregar('./js/componentes/corpo/formulario/formulario.html', container);
 
-    //carregarCampos();
+    carregarCampos();
 }

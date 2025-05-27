@@ -1,6 +1,6 @@
 import { carregar } from "../../../carregar.js";
 
-export function componenteBotao() {
+export async function componenteBotao() {
   const formulario = document.querySelector('#formulario');
-  carregar('./js/componentes/corpo/formulario/botao/botao.html', formulario);
+  await carregar('./js/componentes/corpo/formulario/botao/botao.html', formulario);
 }
