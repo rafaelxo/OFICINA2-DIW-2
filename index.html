@@ -8,28 +8,9 @@
 </head>
 
 <body>
-    <form action="validacao.html" method="post">
-        <table>
-            <tr>
-                <td>login</td>
-                <td><input id="login" /></td>
-            </tr>
-            <tr>
-                <td>e-mail:</td>
-                <td><input id="email" /></td>
-            </tr>
-            <tr>
-                <td>Data de nascimento:</td>
-                <td><input onkeypress="return mascdata(this, event);" id="datanasc" /></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="reset" value="limpar" name="limpa" />
-                    <input type="submit" value="Cadastrar" name="cadastro" onclick="return verificarFormulario()" />
-                </td>
-            </tr>
-        </table>
-    </form>
+    <div id="cabecalho"></div>
+    <div id="container"></div>
+    <div id="rodape"></div>
     <script type="module" src="./main.js"></script>
 </body>
 
