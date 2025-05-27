@@ -13,7 +13,7 @@ function carregarCampos() {
 
 export function componenteFormulario() {
     const container = document.querySelector('#container');
-    carregar('./js/componentes/formulario/formulario.html', container);
+    carregar('./js/componentes/corpo/formulario/formulario.html', container);
 
-    carregarCampos();
+    //carregarCampos();
 }
