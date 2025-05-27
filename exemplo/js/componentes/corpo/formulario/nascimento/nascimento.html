@@ -1,5 +1,14 @@
 <div class="campo">
   <label for="nascimento">Data de nascimento:</label>
+  <!--No elemento abaixo, a palavra chave "return" é necessária para
+      capturar o retorno da função "mascaraDataNascimento()"".
+      Assim, é possível controlar se a tecla digitada será aceita ou não.
+      O evento "onkeypress" espera que a função chamada retorne:
+      **true**: a tecla pressionada será aceita normalmente (o caractere 
+                será inserido no campo).
+      **false**: a tecla será bloqueada (o caractere não será inserido 
+                no campo).
+      -->
   <input type="text" id="nascimento" name="nascimento" onkeypress="return mascaraDataNascimento(this, event);"  required />
   <p id="mensagemErroNascimento"></p>
 </div>
