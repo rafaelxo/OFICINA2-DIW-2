@@ -1,4 +1,5 @@
 <div class="campo">
   <label for="nascimento">Data de nascimento:</label>
-  <input type="text" id="nascimento" name="nascimento" required />
+  <input type="text" id="nascimento" name="nascimento" onkeypress="return mascaraDataNascimento(this, event);"  required />
+  <p id="mensagemErroNascimento"></p>
 </div>

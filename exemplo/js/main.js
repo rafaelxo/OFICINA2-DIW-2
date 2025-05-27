@@ -7,6 +7,7 @@ import { aplicarComportamentoNascimento, validarNascimento } from '../componente
 import { enviarDados } from '../api/fetchAPI.js';
 */
 
+
 window.addEventListener('DOMContentLoaded', () => {
     carregarComponentes();    
     

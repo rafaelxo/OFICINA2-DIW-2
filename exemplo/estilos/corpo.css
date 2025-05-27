@@ -18,10 +18,15 @@
     display: flex;
     flex-direction: column;
     margin: .5rem;
+    height: 4em;
 }
 
 input{
     padding: 0.3rem;
+}
+
+#nome.invalido {
+  border: 2px solid red;
 }
 
 button{
@@ -31,4 +36,9 @@ button{
     font-weight: bold;
     border: none;
     background-color: blue;
+}
+
+#mensagemErroNome {
+    font-size: 0.65rem;
+    color: red;
 }
