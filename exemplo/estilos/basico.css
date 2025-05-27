@@ -1,7 +1,3 @@
-/*
- * Configuração de elementos HTML.
- */
-
  /* Reset básico */
 * {
     margin: 0;
@@ -30,21 +26,4 @@ body {
     flex-direction: column;
     min-height: 100vh; /* vh: viewport height (altura da janela de visualização). */
     border: 3px solid red;
-}
-
-/*
- * Configuração de identificadores (IDs).
- */
- #cabecalho{
-    border: 3px solid #07f232;
-}
-
-#container {
-    border: 3px solid #07f232;
-    display: flex;
-    flex: 1;
-}
-
-#rodape {
-    border: 3px solid #07f232;
 }

@@ -1,0 +1,6 @@
+#corpo {
+    border: 3px solid #07f232;
+    display: flex;
+    flex: 1;
+    background-color: rgb(237, 237, 237);
+}

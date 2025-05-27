@@ -1,0 +1,26 @@
+ #cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    border: 3px solid orange;
+    background-color: yellow;
+}
+
+#avatarDoCabecalho {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 100%;
+    color: white;
+    font-weight: bolder;
+    background-color: red;
+}
+
+#tituloDoCabecalho {
+    margin-left: 1rem;
+}

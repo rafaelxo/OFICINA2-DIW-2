@@ -1,11 +1,16 @@
-import { aplicarComportamentoNome, validarNome } from './componentes/nome/nome.js';
-import { aplicarComportamentoEmail, validarEmail } from './componentes/email/email.js';
-import { aplicarComportamentoNascimento, validarNascimento } from './componentes/nascimento/nascimento.js';
+import { carregarComponentes } from './componentes/carregarComponentes.js';
 
-import { enviarDados } from './api/fetchAPI.js';
+/*import { aplicarComportamentoNome, validarNome } from '../componentes/nome/nome.js';
+import { aplicarComportamentoEmail, validarEmail } from '../componentes/email/email.js';
+import { aplicarComportamentoNascimento, validarNascimento } from '../componentes/nascimento/nascimento.js';
+
+import { enviarDados } from '../api/fetchAPI.js';
+*/
 
 window.addEventListener('DOMContentLoaded', () => {
-    aplicarComportamentoNome();
+    carregarComponentes();    
+    
+    /*    aplicarComportamentoNome();
     aplicarComportamentoEmail();
     aplicarComportamentoNascimento();
 
@@ -21,5 +26,5 @@ window.addEventListener('DOMContentLoaded', () => {
         const resposta = await enviarDados(dados);
         if (resposta != "")
             alert('Cadastro enviado com sucesso!');
-    });
+    });*/
 });
