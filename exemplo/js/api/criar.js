@@ -21,10 +21,10 @@ export async function enviarDados(dados) {
 }
 
 export function imprimeObjetoJson(objetoJson){
-  return `<div>${objetoJson.id}</div> 
-          <div>${objetoJson.nome}</div> 
-          <div>${objetoJson.nascimento}</div>
-          <div>${objetoJson.email}</div>`;
+  return `<div>ID: ${objetoJson.id}</div> 
+          <div>Nome: ${objetoJson.nome}</div> 
+          <div>Nascimento: ${objetoJson.nascimento}</div>
+          <div>E-mail: ${objetoJson.email}</div>`;
 }
 
 /*
