@@ -12,8 +12,8 @@ async function carregarCampos() {
 }
 
 export async function componenteFormulario() {
-    const container = document.querySelector('#container');
-    await carregar('./js/componentes/corpo/formulario/formulario.html', container);
+    const painelEsquerdo = document.querySelector('#painelEsquerdo');
+    await carregar('./js/componentes/corpo/formulario/formulario.html', painelEsquerdo);
 
     carregarCampos();
 }

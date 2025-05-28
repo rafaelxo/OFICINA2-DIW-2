@@ -9,27 +9,33 @@
 }
 
 #container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#painelEsquerdo,
+#painelDireito {
     padding: 1rem;
     border: 3px solid rgb(146, 145, 145);
     box-shadow: 0.3rem 0.3rem 0.3rem 0.03rem rgb(198, 197, 197);
 }
 
-.campo{
+.campo {
     display: flex;
     flex-direction: column;
     margin: .5rem;
     height: 4em;
 }
 
-input{
+input {
     padding: 0.3rem;
 }
 
 #nome.invalido {
-  border: 2px solid red;
+    border: 2px solid red;
 }
 
-button{
+button {
     margin-top: 1.5rem;
     padding: 0.5rem;
     color: white;

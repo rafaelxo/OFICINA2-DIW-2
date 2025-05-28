@@ -1,8 +1,9 @@
 export async function enviarDados(dados) {
-    const url = "";
+    const url = "https://01c72ea2-dc83-4f76-b4e6-f998346028e2-00-1fmk7t8gu8uk4.picard.replit.dev/";
+    const urlUsuarios = url + "usuarios";
 
     try {
-        const resposta = await fetch(url, {
+        const resposta = await fetch(urlUsuarios, {
             method: 'POST',
             headers: { "Content-type": "application/json; charset=UTF-8" },
             body: JSON.stringify(dados),
