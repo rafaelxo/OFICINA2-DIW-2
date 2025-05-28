@@ -1,5 +1,3 @@
-import { enviarDados } from "./api/criar";
-
 // Verificar se foram informados, pelo menos, 2 caracteres como nome: 
 function comportamentoCampoNome() {
     const input = document.querySelector('#nome');
@@ -41,9 +39,4 @@ function mascaraDataNascimento(input, evento) {
     }
 
     return true;
-}
-
-function enviar() {
-    var corpoPainelDeSaida = document.getElementById("corpoPainelDeSaida");
-    corpoPainelDeSaida.innerHTML = enviarDados();
 }
