@@ -5,7 +5,8 @@ export async function componenteBotao() {
   await carregar('./js/componentes/corpo/formulario/botao/botao.html', formulario);
 
   const botao = container.querySelector('button');
-  botao.addEventListener('click', async () => {
+  botao.addEventListener('click', async (event) => {
+    event.preventDefault();
     const corpoPainelDeSaida = document.getElementById("corpoPainelDeSaida");
     corpoPainelDeSaida.innerHTML = await enviarDados();
   });
