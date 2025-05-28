@@ -1,16 +1,4 @@
-// Verificar se foram informados, pelo menos, 2 caracteres como nome: 
-function comportamentoCampoNome() {
-    const input = document.querySelector('#nome');
-    let mensagem = document.querySelector('#mensagemErroNome');
 
-    if (nome.value.length < 2) {
-        input.classList.add('invalido');
-        mensagem.innerHTML = "Nome inválido."
-    } else {
-        input.classList.remove('invalido');
-        mensagem.innerHTML = ""
-    }
-}
 
 function mascaraDataNascimento(input, evento) {
     // Permitir apagar com as teclas Backspace e Delete.

@@ -20,6 +20,7 @@ export async function componenteBotao() {
   await carregar('./js/componentes/corpo/formulario/botao/botao.html', formulario);
 
   const botao = container.querySelector('button');
+  
   botao.addEventListener('click', async (event) => {
     event.preventDefault();
 
@@ -28,7 +29,7 @@ export async function componenteBotao() {
 
     const corpoPainelDeSaida = document.getElementById("corpoPainelDeSaida");
     corpoPainelDeSaida.innerHTML = imprimeObjetoJson(json);
-    
+
     limparDadosFormulario();
   });
 }
