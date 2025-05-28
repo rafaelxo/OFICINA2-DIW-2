@@ -26,20 +26,3 @@ export function imprimeObjetoJson(objetoJson){
           <div>Nascimento: ${objetoJson.nascimento}</div>
           <div>E-mail: ${objetoJson.email}</div>`;
 }
-
-/*
-export async function enviarDados(dados) {
-    const url = "";
-    const resposta = "";
-
-    await fetch(url, {
-        method: 'POST',
-        headers: { "Content-type": "application/json; charset=UTF-8" },
-        body: JSON.stringify(dados)
-    })
-    .then((response) => response.json())
-    .then((json) => resposta = json);
-
-    return resposta;
-}
-*/
