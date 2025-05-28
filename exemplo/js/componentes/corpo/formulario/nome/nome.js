@@ -1,7 +1,6 @@
 import { carregar } from "../../../carregar.js";
 
-// Valida o campo nome
-function comportamentoCampoNome(nome) {
+function validarCampoNome(nome) {
     let mensagem = document.querySelector('#mensagemErroNome');
 
     if (nome.value.trim().length < 2) {
@@ -17,9 +16,7 @@ export async function componenteNome() {
     const formulario = document.querySelector('#formulario');
     await carregar('./js/componentes/corpo/formulario/nome/nome.html', formulario);
 
-    // Buscando o input dentro do formulário que recebeu o HTML
     const nome = formulario.querySelector('#nome');
 
-    // Agora o evento será amarrado corretamente
-    nome.addEventListener('blur', (event) => comportamentoCampoNome(event.target));
+    nome.addEventListener('blur', (event) => validarCampoNome(event.target));
 }
