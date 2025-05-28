@@ -1,6 +1,6 @@
 # Exercício
 
-Altere o exemplo apresentado como especicado abaixo:
+Altere o exemplo apresentado, como especificado abaixo:
 
 1) Colocar uma imagem no avatar do cabeçalho.
 
