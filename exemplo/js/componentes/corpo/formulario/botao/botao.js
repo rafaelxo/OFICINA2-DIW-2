@@ -1,5 +1,5 @@
 import { carregar } from "../../../carregar.js";
-import { enviarDados } from "../../../../api/criar.js";
+import { enviarDados, imprimeObjetoJson } from "../../../../api/criar.js";
 
 export async function componenteBotao() {
   const formulario = document.querySelector('#formulario');
@@ -9,8 +9,8 @@ export async function componenteBotao() {
   botao.addEventListener('click', async (event) => {
     event.preventDefault();
     const corpoPainelDeSaida = document.getElementById("corpoPainelDeSaida");
-    var json = 
-    corpoPainelDeSaida.innerHTML = await enviarDados();
+    var json = await enviarDados();
+    corpoPainelDeSaida.innerHTML = imprimeObjetoJson(json);
   });
 }
 
