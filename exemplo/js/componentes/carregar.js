@@ -6,7 +6,7 @@ export async function carregar(caminhoDoComponente, elementoPai) {
 
 /*
 => insertAdjacentHTML(posicao, html):
-   Insere html no DOM, sem substituir o conteúdo original.
+   * Insere html no DOM na posição informada, sem substituir o conteúdo original.
 
 => As 4 posições possíveis:
    * "beforebegin": antes do próprio elemento.
