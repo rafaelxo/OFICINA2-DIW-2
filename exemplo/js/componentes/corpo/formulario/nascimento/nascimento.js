@@ -1,34 +1,35 @@
 import { carregar } from "../../../carregar.js";
 
 function comportamentoDataNascimento(evento) {
-  var input = evento.target;
+  const input = evento.target;
 
   // Permitir apagar com as teclas Backspace e Delete.
   if (evento.key === 'Backspace' || evento.key === 'Delete') {
-    return true;
+    return; // deixa seguir normalmente.
   }
 
   // Impedir que sejam digitados mais de 10 caracteres (dd/mm/yyyy).
-  if (input.value.length == 10) {
-    return false;
+  if (input.value.length === 10) {
+    evento.preventDefault(); // BLOQUEIA as teclas.
+    return;
   }
 
-  // Verifica se a tecla pressionada está entre '0' e '9'
+  /* Verificar se a tecla pressionada está entre '0' e '9'.
+     Bloquear se não for número.
+  */
   if (evento.key < '0' || evento.key > '9') {
-    //alert("Informe somente números.");
-    return false;
+    evento.preventDefault(); // BLOQUEIA as teclas.
+    return;
   }
 
   /* Quando o usuário digitar dois dígitos (dd), ou 
      dois mais dois (dd/mm), o código insere automaticamente
      a barra. Isso constrói a máscara da data conforme a 
-     pessoa digita.
+     pessoa digita. Adiciona a barra automaticamente em dd/mm/yyyy.
   */
-  if ((input.value.length == 2) || (input.value.length == 5)) {
-    input.value = input.value + '/';
+  if ((input.value.length === 2) || (input.value.length === 5)) {
+    input.value += '/';
   }
-
-  return true;
 }
 
 export async function componenteNascimento() {
