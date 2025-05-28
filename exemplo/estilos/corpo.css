@@ -15,9 +15,27 @@
 
 #painelEsquerdo,
 #painelDireito {
+    width: 20rem;
+    height: 21rem;
     padding: 1rem;
+    margin: 1rem;
     border: 3px solid rgb(146, 145, 145);
     box-shadow: 0.3rem 0.3rem 0.3rem 0.03rem rgb(198, 197, 197);
+}
+
+#painelDireito {
+    overflow: auto;
+}
+
+#tituloPainelDeSaida {
+    font-size: 1rem;
+    text-align: center;
+    padding: .5rem;
+}
+
+#corpoPainelDeSaida {
+    font-size: 0.8rem;
+    padding: .5rem;
 }
 
 .campo {
