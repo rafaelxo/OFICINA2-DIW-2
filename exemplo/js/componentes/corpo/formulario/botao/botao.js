@@ -1,4 +1,5 @@
 import { carregar } from "../../../carregar.js";
+import { enviarDados } from "../../../../api/criar.js";
 
 export async function componenteBotao() {
   const formulario = document.querySelector('#formulario');
