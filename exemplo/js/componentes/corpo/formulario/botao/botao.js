@@ -9,6 +9,7 @@ export async function componenteBotao() {
   botao.addEventListener('click', async (event) => {
     event.preventDefault();
     const corpoPainelDeSaida = document.getElementById("corpoPainelDeSaida");
+    var json = 
     corpoPainelDeSaida.innerHTML = await enviarDados();
   });
 }

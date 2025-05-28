@@ -20,6 +20,12 @@ export async function enviarDados(dados) {
     }
 }
 
+export function imprimeObjetoJson(objetoJson){
+  return `<div>${objetoJson.nome}</div> 
+          <div>${objetoJson.nascimento}</div>
+          <div>${objetoJson.email}</div>`;
+}
+
 /*
 export async function enviarDados(dados) {
     const url = "";
