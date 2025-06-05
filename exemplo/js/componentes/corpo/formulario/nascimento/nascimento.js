@@ -17,6 +17,7 @@ function comportamentoDataNascimento(evento) {
   /* Verificar se a tecla pressionada está entre '0' e '9'.
      Bloquear se não for número.
   */
+
   if (evento.key < '0' || evento.key > '9') {
     evento.preventDefault(); // BLOQUEIA as teclas.
     return;
@@ -27,6 +28,7 @@ function comportamentoDataNascimento(evento) {
      a barra. Isso constrói a máscara da data conforme a 
      pessoa digita. Adiciona a barra automaticamente em dd/mm/yyyy.
   */
+ 
   if ((input.value.length === 2) || (input.value.length === 5)) {
     input.value += '/';
   }
