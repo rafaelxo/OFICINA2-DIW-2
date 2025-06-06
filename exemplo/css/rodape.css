@@ -1,7 +1,12 @@
 #rodape {
-    background-color: #4b4b4b;
-    color: #c9c9c9;
+    background-color: #343a40;
+    color: #adb5bd;
     text-align: center;
     padding: 1rem;
-    border: 3px solid blue;
+    font-size: 0.9rem;
+    border-top: 2px solid #495057;
+}
+
+#rodape p {
+    margin: 0;
 }

@@ -38,7 +38,7 @@ function validarCampoNascimento(nascimento) {
 
 export async function componenteNascimento() {
     const formulario = document.querySelector('#formulario');
-    await carregar('./js/componentes/corpo/formclubario/nascimento/nascimento.html', formulario);
+    await carregar('./js/componentes/corpo/formulario/nascimento/nascimento.html', formulario);
 
     const nascimento = formulario.querySelector('#nascimento');
 

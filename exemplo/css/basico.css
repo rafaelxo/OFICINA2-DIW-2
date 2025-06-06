@@ -1,29 +1,80 @@
- /* Reset básico */
+/* Reset básico para remover estilos padrão e garantir consistência */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Faz com que largura e altura incluam bordas e padding no cálculo. */
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
-/*
-box-sizing: content-box;
-  Especifica que apenas o conteúdo deve ser considerado
-  na largura e na altura total do elemento:
-  content width + padding + border => largura real do elemento
-  content height + padding + border => altura real do elemento 
-  Ou seja: o elemento fica maior do que especificado 
-           na largura e na altura.
 
-box-sizing: border-box;
-  Especifica que o conteúdo, o padding e a borda devem ser 
-  considerados na largura e na altura total do elemento.
-*/
-
+/* Estilização geral do body */
 body {
     font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6; /* Define o espaçamento entre linhas para melhorar a legibilidade. */
+    line-height: 1.5;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* vh: viewport height (altura da janela de visualização). */
-    border: 3px solid red;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilização de inputs genéricos */
+input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilização de botões genéricos */
+button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Estilização de campos inválidos */
+#nome.invalido,
+#email.invalido,
+#nascimento.invalido,
+#id.invalido {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+/* Estilização de mensagens de erro */
+#mensagemErroNome,
+#mensagemErroEmail,
+#mensagemErroNascimento {
+    font-size: 0.75rem;
+    color: #dc3545;
+    margin-top: 0.2rem;
+    min-height: 1rem;
+}
+
+/* Estilização para mensagens de erro na saída */
+.erro {
+    color: #dc3545;
+    font-weight: 500;
+    padding: 0.5rem;
+    background-color: #fff5f5;
+    border-radius: 4px;
 }

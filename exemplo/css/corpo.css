@@ -1,68 +1,121 @@
 #corpo {
-    border: 3px solid #07f232;
-    display: flex;
     flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    background-color: rgb(237, 237, 237);
+    background-color: #e9ecef;
+    padding: 1rem;
 }
 
 #container {
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    max-width: 1000px;
 }
 
 #painelEsquerdo,
 #painelDireito {
-    width: 20rem;
-    height: 21rem;
-    padding: 1rem;
+    width: 22rem;
+    padding: 1.5rem;
     margin: 1rem;
-    border: 3px solid rgb(146, 145, 145);
-    box-shadow: 0.3rem 0.3rem 0.3rem 0.03rem rgb(198, 197, 197);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #painelDireito {
-    overflow: auto;
+    overflow-y: auto;
+    max-height: 24rem;
 }
 
 #tituloPainelDeSaida {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
     text-align: center;
-    padding: .5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
 }
 
 #corpoPainelDeSaida {
-    font-size: 0.8rem;
-    padding: .5rem;
+    font-size: 0.85rem;
+    padding: 0.75rem;
+    line-height: 1.4;
+}
+
+#corpoPainelDeSaida div {
+    margin-bottom: 0.5rem;
+}
+
+#corpoPainelDeSaida hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 0.5rem 0;
 }
 
 .campo {
     display: flex;
     flex-direction: column;
-    margin: .5rem;
-    height: 4em;
+    margin: 0.75rem 0;
 }
 
-input {
-    padding: 0.3rem;
+.campo label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
 }
 
-#nome.invalido {
-    border: 2px solid red;
+/* Estilização específica para botões */
+#botaoCriar {
+    background-color: #28a745;
 }
 
-button {
-    margin-top: 1.5rem;
-    padding: 0.5rem;
-    color: white;
-    font-weight: bold;
-    border: none;
-    background-color: blue;
+#botaoCriar:hover {
+    background-color: #218838;
 }
 
-#mensagemErroNome {
-    font-size: 0.65rem;
-    color: red;
+#botaoLerTodos {
+    background-color: #17a2b8;
+}
+
+#botaoLerTodos:hover {
+    background-color: #138496;
+}
+
+#botaoLerPorId {
+    background-color: #007bff;
+}
+
+#botaoLerPorId:hover {
+    background-color: #0069d9;
+}
+
+#botaoAtualizar {
+    background-color: #ffc107;
+}
+
+#botaoAtualizar:hover {
+    background-color: #e0a800;
+}
+
+#botaoExcluir {
+    background-color: #dc3545;
+}
+
+#botaoExcluir:hover {
+    background-color: #c82333;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #painelEsquerdo,
+    #painelDireito {
+        width: 90%;
+        max-width: 22rem;
+    }
 }
